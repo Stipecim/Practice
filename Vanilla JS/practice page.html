@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+	<script  src="dom.js"></script> <!-- This includes script dom.js where I've made Sphere volume clculator -->
+</head>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p id="a"></p>
+
+<p id="b"></p>
+<p id="c"></p>
+<p id="d"></p>
+
+
+<div style="display: flex; gap: 10px;">
+	<p> Division: </p><p id="division"></p>
+</div>
+<div style="display: flex; gap: 10px;">
+	<p> Division Result is: <p id="dResult"></p></p>
+</div>
+
+<script src="vanilajsbasics.js"></script> <!-- Chenges Paragraphs, and asks user for input to do division -->
+
+<script src="conditions.js"></script> <!-- Checks if input numbers differ from each other, checks increasing order (result is displayed in console) -->
+<<script src="forloop.js"></script> <!-- Uses for loops to check for odd numbers and multiplication (resultis diplayed in console) -->
+
+<script src="arr.js"></script> <!-- sums everything in array, calculates avreage of the arry, finds min/max value in array
+	(code is displayed in console) 		-->
+
+<script src="func.js"></script> <!-- Check if number is prime, prints arr and max value, find factorial of number(result is displayed in console) -->
+
+<p>Input radius value and get volume of sphere</p>
+
+<form id ="form">
+	<label for="Radius" ><b>Radius</b></label><br>
+	<input type="text" id="radius"><br>
+	<label for="Volume"><b>Volume</b></label><br>	
+	<input type ="text" id="volume" value="Result" ><br>
+	
+	<input type="button" value="Calculate" onclick="getVolume()">	
+	
+
+</form>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+	<script src="rpsj.js"></script>
+	
+	<title>Rock Paper Scissors</title>
+	
+	<style>
+		.img_a{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 100px;
+			width: 50%;
+		}
+		.th_h{
+			text-align: center;
+		}
+		.btns{
+			text-align: center;
+		}
+	
+		
+	</style>
+</head>
+<body>
+
+<img src="img/rps.png" class="img_a">
+
+<h3 class="th_h"> Rock Paper Scissors </h3>
+<div style="text-align: center">
+	<p>
+		<span> Opponent: </span>
+		<span id="_op"></span>
+	</p>
+
+	<p>
+		<span> Game Stats: </span>
+		<span id="_gStat"></span>
+	</p>
+	
+</div>
+<div class="btns">
+
+	<button type="button" onclick="rps(document.getElementById('rock').value)" value="rock" id="rock">Rock</button>
+	<button type="button" onclick="rps(document.getElementById('paper').value)" value="paper" id="paper">Paper</button>
+	<button type="button" onclick="rps(document.getElementById('scissors').value)" value="scissors" id="scissors">Scissors</button>
+</div>
+
+
+</body>
+</html>
